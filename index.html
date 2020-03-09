@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      li {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+      }
+
+      li:hover {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="search-input" placeholder="Movie name" />
+      <button id="search-btn">Search</button>
+    </div>
+    <main>
+      <ul></ul>
+    </main>
+
+    <movie style="display: none">
+      <img id="icon" alt="Movie icon" />
+      <h1 id="title"></h1>
+      <p id="overview"></p>
+      <div>
+        <h4>Recommendation</h4>
+        <div id="recommendations"></div>
+      </div>
+    </movie>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
